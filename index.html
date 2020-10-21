@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-treno-form</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- container -->
     <div class="container">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
         <!-- Dati user -->
         <section class="dati-input">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
             <form>
                 <div class="col">
                     <label for="name">Nome e cognome</label>
@@ -28,11 +29,11 @@
                         <option value="over65">Over 65</option>
                     </select>
                 </div>
-                <div class="col">
-                    <input type="button" id="genera" value="Genera">
-                    <input type="button" id="annulla" value="Annulla">
-                </div>
             </form>
+                    <div class="col bottoni">
+                        <input type="button" id="genera" value="Genera">
+                        <input type="button" id="annulla" value="Annulla">
+                    </div>
         </section>
 
         <section id="biglietto" class="hidden">
@@ -67,7 +68,9 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>Costo biglietto</td>
+                    <td>
+                        <strong>Costo biglietto</strong>
+                    </td>
                     <td>
                         <span id="costo-biglietto"o></span>
                     </td>

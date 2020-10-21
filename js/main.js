@@ -42,4 +42,15 @@ genera.addEventListener('click', function() {
     document.getElementById('carrozza').innerHTML = carrozza;
     document.getElementById('codice-cp').innerHTML = codiceCp;
     document.getElementById('costo-biglietto').innerHTML = prezzoBiglietto;
+
+    sectionBiglietto.className = 'show';
+})
+
+//Evento bottone annulla
+annulla.addEventListener('click', function() {
+    sectionBiglietto.className = 'hidden';
+
+    document.getElementById('name').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('eta').value = '';
 })
